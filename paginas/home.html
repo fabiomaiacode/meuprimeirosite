@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construtora Maia - Home</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/> <!-- chamamos o CSS externo aqui -->
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+crossorigin="anonymous"></script> <!-- integração com o JQuery-->
+<script src="java.js"></script> <!-- chamamos o Java externo aqui -->
+
+<div class="container"><!-- aqui tratamos da barra de navegação e o menu -->
+  <header>
+    <nav>
+      <div class="nav-container">
+          <a href="home.html">
+          <img id="logo" src="../imagens/maialogo.png" alt="logomaiaconstrutora">
+          </a>
+          <i class="fa fa-bars btn-menumobile"></i><!-- TENTEI ADICIONAR A BARRA PARA MOBILE, MAS NÃO CONSEGUI)-->
+          <ul class="nav-list">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="quemsomos.html">QUEM SOMOS</a></li>
+            <li><a href="imoveis.html">IMÓVEIS</a></li>
+            <li><a href="financiamento.html">FINANCIAMENTO</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+          </ul>
+      </div>
+    </nav>
+  <section id="bannerhome-container"> <!-- tratamos da sessão depoimentos -->
+      <div class="wraper">
+        <br><br>
+        <h2>SEU SONHO CADA VEZ MAIS PRÓXIMO!</h2>
+        <P>Conheça nossos imóveis e as condições imperdíveis de financiamento.</P>
+      </div>
+</section>
+  </header>
+  <section id="depoimentos-container"> <!-- tratamos da sessão depoimentos -->
+      <div class="wraper">
+        <br><br>
+        <h2>VEJA O QUE DIZEM NOSSOS CLIENTES</h2>
+        <div class="depoimentos-box">
+          <p class="depoimentos-msg">O imóvel que compramos é de um acabamento sem igual!</p>
+          <img src="../imagens/marianamelo.jpg">
+          <p class="depoimento-nome">Mariana Melo</p>
+          <p align="center">Analista de TI</p>
+        </div>
+        <div class="depoimentos-box">
+          <p class="depoimentos-msg">A melhor escolha. Financiei com as melhores condições do mercado!</p>
+          <img src="../imagens/otaviofranco.jpg">
+          <p class="depoimento-nome">Otávio Franco</p>
+          <p align="center">Empresário</p>
+        </div>
+        <div class="depoimentos-box">
+          <p class="depoimentos-msg">O atendimento é espetacular, inclusive no pós-venda!</p>
+          <img src="../imagens/clarissabrennand.jpg">
+          <p class="depoimento-nome">Clarissa Brennand</p>
+          <p align="center">Engenheira Elétrica</p>
+        </div>
+      </div>
+  </section>
+  <footer><!-- criamos aqui nosso "footer" um rodapé mais estilizado e organizado, padrão para todas as páginas -->
+    <div class="wrapper">
+      <div class="footer-box">
+        <div class="empresa-footer" align="center">
+          <a href="home.html">
+          <img src="../imagens/maialogo.png"></a>
+        </div>
+      </div>
+        <div class="footer-box">
+          <div class="contato-footer" align="center">
+            <h2>Endereço:</h2>
+            <br>
+            <p>Avenida Agamenon Magalhães, nº 1060, Maurício de Nassau, Caruaru-PE</p>
+            <br>
+            <h2>Contato:</h2>
+            <br>
+            <p>Telefone/Whatsapp: <a href="tel:+558130463443" title="Ligue pra gente ou envie uma mensagem no Whatsapp">(81) 3046-3443</a> - E-mail: <a href="mailto:atendimento@construtoramaia.com.br?subject=Informações - Contato - Site&body=Olá, desejo saber mais informações sobre o imóvel: " title="Envie um e-mail">atendimento@construtoramaia.com.br</a></p>
+          </div>
+        </div>
+      </div>
+    <div class="footer-bottom">
+      <div class="wrapper">
+        <br>
+        <p align="center">Desenvolvido por Fábio Maia - Projeto de Desenvolvimento Web | Unifavip | Wyden - Professor Kayo. 2022</p>
+      </div>
+    </div>
+    </div>
+  </footer>
+</div>
+</div>
+<div id="modal-promocao" class="modal-container">
+  <div class="modal">
+    <button class="fechar">x</button>
+    <h3 class="subtitulo">APROVEITE AS CONDIÇÕES ESPECIAIS PARA PAGAMENTO À VISTA</h3>
+    <p class="subtitulo">ITBI e Escritura Grátis!</p>
+    <p class="subtitulo">Promoção válida até 15/12/2022</p>
+  </div>
+</div>
+</body>
+</html>

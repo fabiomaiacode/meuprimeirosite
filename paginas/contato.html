@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construtora Maia - Contato</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/> <!-- chamamos o CSS externo aqui -->
+</head>
+<body>
+<script src="https://code.jquery.com/jquery-3.6.1.min.js"
+integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+crossorigin="anonymous"></script> <!-- integração com o JQuery-->
+<script src="java.js"></script> <!-- chamamos o Java externo aqui -->
+
+<div class="container"><!-- aqui tratamos da barra de navegação e o menu -->
+  <header>
+    <nav>
+      <div class="nav-container">
+          <a href="home.html">
+          <img id="logo" src="../imagens/maialogo.png" alt="logomaiaconstrutora">
+          </a>
+          <i class="fa fa-bars btn-menumobile"></i><!-- TENTEI ADICIONAR A BARRA PARA MOBILE, MAS NÃO CONSEGUI)-->
+          <ul class="nav-list">
+            <li><a href="home.html">HOME</a></li>
+            <li><a href="quemsomos.html">QUEM SOMOS</a></li>
+            <li><a href="imoveis.html">IMÓVEIS</a></li>
+            <li><a href="financiamento.html">FINANCIAMENTO</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+          </ul>
+      </div>
+    </nav>
+  <section id="bannercontato-container"> <!-- tratamos da sessão depoimentos -->
+      <div class="wraper">
+        <br><br>
+        <h2>CONTATO</h2>
+        <P>Entre em contato agora mesmo para realizar o seu sonho!</P>
+      </div>
+</section>
+  </header>
+  <section id="contato-container"> <!-- Conteúdo específico da página -->
+    <div class="wraper">
+      <br><br>
+      <h2 align="center">Possuímos diversos canais de atendimento, será um prazer atendê-lo.</h2><br>
+      <div class="contato-box" align="center">
+        <form method = "post" action = ""> <!--Aqui iniciamos o formulário de contato-->
+          <p>
+          <input type = "hidden" name = "recipient" value = "deitel@deitel.com"  <input type = "hidden" name = "subject" value = "Feedback Form" />
+          <input type = "hidden" name = "redirect" value = "main.html" />
+          </p>
+          <p><label>Nome:
+              <input name = "name" type = "text" size = "25" />
+              </label></p><br>
+              <p><label>Descrição:<br />
+              <textarea name = "comments"
+              rows = "4" cols = "36">Descreva aqui...</textarea>
+              </label></p><br>
+              <p><label>E-mail:
+              <input name = "email" type = "text" size = "25" />
+              </label></p> <br>
+              <p><strong>Selecione de acordo com sua necessidade:</strong><br />
+                  <label>Elogio
+                  <input name = "thingsliked" type = "checkbox"
+                  value = "titulos" /></label><br>
+                  <label>Sugestão
+                  <input name = "thingsliked" type = "checkbox"
+                  value = "Links" /></label><br>
+                  <label>Reclamação
+                  <input name = "thingsliked" type = "checkbox"
+                  value = "Formularios" /></label><br>
+                  <label>Informações de Venda
+                  <input name = "thingsliked" type = "checkbox"
+                  value = "Imagens" /></label><br>
+                  <label>Assistência Técnica
+                  <input name = "thingsliked" type = "checkbox"
+                  value = "Code" /></label><br>
+                  </p><br><br>
+                  
+                      <p><label>Qual Imóvel se trata?
+                          <select name = "rating">
+                         <option selected = "selected"> </option>   
+                         <option>Edf. Winston Churchill</option>
+                         <option>Edf. Ayan Rand</option>
+                         <option>Edf. Fiódor Dostoiévski</option>
+                         <option>Outro</option>
+                         <option>Não se trata de imóvel</option>
+                          </select>
+                          </label>
+                          </p>
+                          <p>
+                              <input type = "submit" value = "Enviar" />
+                              <input type = "reset" value = "Limpar" />
+                              </p><br><br>
+                              </form>
+        <p>Obs: Formulário: tempo de resposta = 24 horas úteis.</p><br><br>
+        <p>As reclamações, elogios e sugestões são direcionadas para a Ouvidoria.</p><br><br>
+        <p>Informações de Venda são enviadas para o setor de Vendas.</p><br><br>
+        <p>Assistência Técnica são encaminhadas para o setor de Engenharia.</p><br><br>
+        <p>Endereço:</p>
+        <p>Avenida Agamenon Magalhães, nº 1060, Maurício de Nassau, Caruaru-PE</p><br>
+        <p>Contato:</p>
+        <p>Telefone/Whatsapp: <a href="tel:+558130463443" title="Ligue pra gente ou envie uma mensagem no Whatsapp">(81) 3046-3443</a> - E-mail: <a href="mailto:atendimento@construtoramaia.com.br?subject=Informações - Contato - Site&body=Olá, desejo saber mais informações sobre o imóvel: " title="Envie um e-mail">atendimento@construtoramaia.com.br</a></p>
+        <br>
+      
+      </div>
+    </div>
+</section>
+  <section id="depoimentos-container"> <!-- tratamos da sessão depoimentos -->
+      <div class="wraper">
+        <br><br>
+        <h2>VEJA O QUE DIZEM NOSSOS CLIENTES</h2>
+        <div class="depoimentos-box">
+          <p class="depoimentos-msg">O imóvel que compramos é de um acabamento sem igual!</p>
+          <img src="../imagens/marianamelo.jpg">
+          <p class="depoimento-nome">Mariana Melo</p>
+          <p align="center">Analista de TI</p>
+        </div>
+        <div class="depoimentos-box">
+          <p class="depoimentos-msg">A melhor escolha. Financiei com as melhores condições do mercado!</p>
+          <img src="../imagens/otaviofranco.jpg">
+          <p class="depoimento-nome">Otávio Franco</p>
+          <p align="center">Empresário</p>
+        </div>
+        <div class="depoimentos-box">
+          <p class="depoimentos-msg">O atendimento é espetacular, inclusive no pós-venda!</p>
+          <img src="../imagens/clarissabrennand.jpg">
+          <p class="depoimento-nome">Clarissa Brennand</p>
+          <p align="center">Engenheira Elétrica</p>
+        </div>
+      </div>
+  </section>
+  <footer> <!-- criamos aqui nosso "footer" um rodapé mais estilizado e organizado, padrão para todas as páginas -->
+    <div class="wrapper">
+      <div class="footer-box">
+        <div class="empresa-footer" align="center">
+          <a href="home.html">
+          <img src="../imagens/maialogo.png"></a>
+        </div>
+      </div>
+        <div class="footer-box">
+          <div class="contato-footer" align="center">
+            <h2>Endereço:</h2>
+            <br>
+            <p>Avenida Agamenon Magalhães, nº 1060, Maurício de Nassau, Caruaru-PE</p>
+            <br>
+            <h2>Contato:</h2>
+            <br>
+            <p>Telefone/Whatsapp: <a href="tel:+558130463443" title="Ligue pra gente ou envie uma mensagem no Whatsapp">(81) 3046-3443</a> - E-mail: <a href="mailto:atendimento@construtoramaia.com.br?subject=Informações - Contato - Site&body=Olá, desejo saber mais informações sobre o imóvel: " title="Envie um e-mail">atendimento@construtoramaia.com.br</a></p>
+          </div>
+        </div>
+      </div>
+    <div class="footer-bottom">
+      <div class="wrapper">
+        <br>
+        <p align="center">Desenvolvido por Fábio Maia - Projeto de Desenvolvimento Web | Unifavip | Wyden - Professor Kayo. 2022</p>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+</div>
+
+</body>
+</html>

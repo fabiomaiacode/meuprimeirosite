@@ -1,0 +1,766 @@
+body {
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, p, span {
+    margin: 0;
+    color: white;
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    max-height: 100%;
+    height: 100%;
+}
+
+/* header */
+header {
+    position: relative;
+    top: 0;
+    height: auto;
+    width: 100%;
+}
+
+/* hide on desktop */
+
+.nav-container .btn-menumobile {
+    display: none;
+}
+
+/* barra de naveagação fixa topo */
+nav {
+    position: fixed;
+    top: 0;
+    height: 120px;
+    width: 100%;
+    z-index: 1;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+nav:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+
+.nav-list:hover li {
+    height: auto;
+}
+
+.nav-container {
+    max-width: 1200px;
+    position: relative;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#logo {
+    width: 250px;
+    height: 90px;
+    margin-top: 10px;
+}
+
+.nav-container ul {
+    float: right;
+    height: 100px;
+    line-height: 100px;
+    margin: 0;
+}
+
+.nav-container li {
+    list-style: none;
+    float: left;
+    margin: 0 15px;
+}
+
+.nav-container li a {
+    text-decoration: none;
+    color: black;
+    transition: 0.9s;
+}
+
+.nav-container li a:hover {
+    color: #2cb48e;
+    font-size: x-large;
+    transition: 0.9s;
+}
+
+.nav-container img {
+    transition: all 0.9s;
+    cursor: pointer;
+}
+
+
+.nav-container img:hover {
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/* Depoimento container */
+
+#depoimentos-container {
+    background: url('../imagens/bannerdepoimentos.png') no-repeat;
+    background-size: cover;
+    padding: 0 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+#depoimentos-container h2, #depoimentos-container p {
+    color: white;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#depoimentos-container h2 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#depoimentos-container p {
+    margin-bottom: 10px;
+}
+
+.depoimentos-box {
+    display: inline-table;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#depoimentos-container .depoimentos-box .depoimentos-msg {
+    background-color: #fff;
+    color: black;
+    border-radius: 10px;
+    padding: 20px;
+    width: 50%;
+    position:relative;
+    margin: 35px auto;
+    font-style: italic;
+}
+
+.depoimentos-msg:after {
+    content: "";
+    width:0;
+    height:0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 20px solid #fff;
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.depoimentos-msg {
+    transition: all 1.5s;
+    border: 10px solid transparent;
+}
+
+.depoimentos-msg:hover {
+    border: 10px solid transparent;
+    border-radius: 50%;
+    transition: all 1.5s;
+    border: 10px solid #17775c;
+    -webkit-transform: scale(0.9);
+    transform: scale(1.2);
+}
+
+.depoimentos-box img {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    transition: all .5s;
+    border: 10px solid transparent;
+}
+
+.depoimentos-box img:hover {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 9px double white;
+    border-radius: 50%;
+}
+
+.depoimento-nome {
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background-color: rgb(31, 31, 31);
+    padding-top: 50px;
+    padding-bottom: 40px;
+    border-top: 3px solid #282a2e;
+}
+
+footer h2, footer p, footer a, footer span {
+    color: #9efff1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+footer h2 {
+    font-weight: 600;
+}
+
+.footer-box {
+    width: auto;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    padding-left: auto;
+    padding-right: auto;
+    align-items: center;
+    flex-direction: row;
+}
+
+footer .wrapper {
+    width: auto;
+}
+
+footer .wrapper:after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+.empresa-footer {
+    width: 100%;
+    margin-top: -20px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.empresa-footer h2 {
+    margin-top: 20px;
+}
+
+.empresa-footer img {
+    width: auto;
+    height: auto;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.empresa-footer img:hover {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+}
+
+.empresa-footer h2, .empresa-footer p {
+    margin-bottom: 20px;
+}
+
+.contato-footer {
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    
+}
+
+.footer-bottom {
+    border-top: 1px solid #2cb48e;
+}
+
+.footer-bottom {
+    font-size: 12px;
+    margin-top: 40px
+}
+
+/* Banners */
+#bannerhome-container {
+    background: url('../imagens/bannerhomemaia.png');
+    background-size: cover;
+    margin-top: 120px;
+    height: 800px;
+}
+
+#bannerquemsomos-container {
+    background: url('../imagens/bannerquemsomosmaia.png');
+    background-size: cover;
+    margin-top: 120px;
+    height: 800px;
+}
+
+#bannerimoveis-container {
+    background: url('../imagens/bannerimoveismaia.png');
+    background-size: cover;
+    margin-top: 120px;
+    height: 800px;
+}
+
+#bannerfinanciamento-container {
+    background: url('../imagens/bannerfinanciamentomaia.png');
+    background-size: cover;
+    margin-top: 120px;
+    height: 800px;
+}
+
+#bannercontato-container {
+    background: url('../imagens/bannercontatomaia.png');
+    background-size: cover;
+    margin-top: 120px;
+    height: 800px;
+}
+
+#bannerhome-container h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#bannerhome-container p {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#bannerquemsomos-container h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#bannerquemsomos-container p {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.quemsomos-msg p {
+    text-align: center;
+    font-size: large;
+}
+
+#bannerimoveis-container h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#bannerimoveis-container p {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    font-family:'Times New Roman', Times, serif;
+}
+
+#bannerfinanciamento-container h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#bannerfinanciamento-container p {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+#bannercontato-container h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#bannercontato-container p {
+    color: white;
+    text-align: center;
+    font-size: x-large;
+    font-family:'Times New Roman', Times, serif;
+}
+
+/* configuração da parte responsiva */
+@media screen and (max-width: 1024px) {
+
+    #logo {
+        position: absolute;
+        left: 50px;
+    }
+
+    .nav-container ul {
+        float: none;
+        text-align: center;
+        padding: 0;
+    }
+
+    .nav-container ul li {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        float: right;
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    #depoimentos-container.wrapper, .wrapper {
+        max-width: auto;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    #depoimentos-container {
+        width: auto;
+        padding-left: 1em;
+    }
+
+    .depoimentos-box .depoimentos-msg {
+        font-size: 15px;
+        padding-left: 1em;
+    }
+
+    .depoimentos-msg p {
+        font-size: .2em;
+    }
+
+    .depoimentos-container {
+        width: auto;
+    }
+
+    #depoimentos-container.wrapper, .wrapper {
+        max-width: 400px;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .nav-container ul li {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        float: right;
+        display: inline-block;
+        margin: 0 10px;
+        font-size: 1px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    
+    .nav-container .btn-menumobile {
+        display: block !important;
+    }
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        height: 8em;
+    }
+
+    #logo {
+        left: 2em;
+        height: 5em;
+        width: 10em;
+        margin-top: 1em;
+    }
+
+    .btn-menumobile {
+        display: block;
+        font-size: 1.75em;
+        color: #282a2e;
+        position: absolute;
+        right: 1.5em;
+        top: 0.75em;
+    }
+
+    .nav-container ul {
+        position: relative;
+        top: 4em;
+        height: 8em;
+        line-height: 3em;
+        display: none;
+    }
+
+    .nav-container ul li {
+        display: block;
+        background-color: #fff;
+        margin: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    .nav-container ul li a {
+        font-size: 1em;
+    }
+
+    .open {
+        display: block !important;
+    }
+
+    #depoimentos-container {
+        width: auto;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .depoimentos-box .depoimentos-msg {
+        font-size: 13px;
+        padding-left: 25px;
+        padding-right: 25px;
+        width: auto;
+        margin-left: 5em;
+        margin-right: 5em;
+    }
+
+    .depoimentos-msg p {
+        font-size: .2em;
+    }
+
+    .depoimentos-container {
+        width: auto;
+    }
+
+    #depoimentos-container.wrapper, .wrapper {
+        max-width: 250px;
+        padding-left: 5em;
+        padding-right: 5em;
+        width: auto;
+    }
+
+    #footer-bottom .wrapper {
+        background-color: black;
+        width: auto;
+        padding: auto;
+        text-align: center;
+        border-top: 3px solid #282a2e;
+    }
+}
+/* Aqui trataremos da sessão destinada a conteúdo exclusivo da página */
+
+#quemsomos-container {
+    background: url('../imagens/bannerdepoimentos.png') no-repeat;
+    background-size: cover;
+    padding: 0 10px;
+}
+
+#contato-container {
+    background: url('../imagens/bannerdepoimentos.png') no-repeat;
+    background-size: cover;
+    padding: 0 10px;
+}
+
+.contato-box p {
+    font-size: x-large;
+}
+
+.contato-box a:link {
+    color: white;
+}
+
+#quemsomos-container h2, p {
+    color: white;
+    text-align: center;
+}
+
+#contato-container h2, p {
+    color: white;
+    text-align: center;
+}
+
+.quemsomos-box {
+    display: inline-table;
+    width: 30%;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+.quemsomos-box img {
+    padding-left: 0;
+    padding-right: 0;
+    transition: all 1s;
+    border: 10px solid transparent;
+    cursor: pointer;
+}
+
+.quemsomos-box img:hover {
+    -webkit-transform: scale(0.9);
+    transform: scale(1.2);
+    border: 5px ridge white;
+}
+
+.tabela-box {
+    text-align: center;
+    margin-top: 30px;
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 25px;
+}
+
+/* editando o estilo da tabela */
+
+table, th, td {
+    border: 1px solid black;
+    }
+    
+table {
+    border-collapse:collapse;
+    margin: auto;
+    width: 700px;
+    }
+
+table tr:hover {
+    background: #9dfae0;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+    font-style:normal;
+    color: black;
+    text-shadow: #282a2e;
+    text-transform:uppercase;
+    }
+    
+th, td{
+    padding: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    width: 500px;
+    }
+    
+.titulos {
+    background-color: black;
+    color: white;
+    width: 250px;
+    }
+    
+.Churchill { 
+    background-color: transparent;
+    font-family: 'Times New Roman';
+    color: white;
+    font-style: italic;
+    }
+    
+.aynrand { 
+    background-color: transparent;
+    font-family: 'Times New Roman';
+    color: white;
+    font-style: italic;
+    }
+    
+.fiodor { 
+    background-color: transparent;
+    font-family: 'Times New Roman';
+    color: white;
+    font-style: italic;
+    }
+
+.areabancos a:link {
+    color: white;
+}
+
+.areabancos a:hover {
+    color: rgb(3, 109, 77);
+}
+
+.areabancos img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all 0.6s;
+    -webkit-filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    filter: drop-shadow(15px 10px 5px rgba(0,0,0,.5));
+    cursor: pointer;
+}
+
+/* CSS do Popup */
+.modal-container {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.5);
+    z-index: 2000;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,.3);
+}
+
+.modal-container.mostrar {
+    display: flex;
+}
+
+.modal {
+    background: #ffffff;
+    width: 40%;
+    min-width: 300px;
+    height: 25%;
+    min-height: 150px;
+    padding: 40px;
+    border: 5px solid black;
+    position: relative;
+}
+
+.fechar {
+    position: absolute;
+    font-size: 1.2em;
+    top: -30px;
+    right: -30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 4px solid black;
+    color: black;
+    background: #2cb48e;
+    cursor: pointer;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0,.3);
+}
+
+.fechar:hover {
+    box-shadow: 0 6px 6px 0 rgba(0,0,0,.3);
+}
+
+.subtitulo {
+    color: black;
+    text-align: center;
+    font-size: x-large;
+    padding: auto;
+}
+
+@keyframes modal {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -60px, 0);
+        transition: all 0.9s;
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+        transition: all 0.9s;
+    }
+}
+
+.mostrar .modal {
+    animation: modal .9s;
+}
